@@ -8,7 +8,7 @@ The `.json` files can now also:
 
 * Contain **comments** `/* ... */`
 
-* Beneath the **`"`** string literal now also supported **`'`** and **`\``'**
+* Beneath the **"** string literal now also supported **'** and **\`**
 * This also holds for escaping 'em, it's also supported.
 * All in keys and in values.
 
