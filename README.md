@@ -10,9 +10,9 @@ The `.json` files can now also:
 
 * Beneath the **"** string literal now also supported **'** and **\`**
 * This also holds for escaping 'em, it's also supported.
-* All in keys and in values.
+* All both in keys and in values.
 
-* *TODO***?**? maybe more features will come l8rs.. dunno.
+* //**TODO??**?// maybe more features will come l8rs.. dunno.
 
 ## Example / Test
 //**TODO**//(insert it here)
