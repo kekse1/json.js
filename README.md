@@ -15,7 +15,7 @@ The `.json` files can now also:
 * //**TODO??**?// maybe more features will come l8rs.. dunno.
 
 ## Download
-* [Version **v0.2.0**](js/json.js) (created **2024-07-08**)
+* [Version **v0.2.1**](js/json.js) (created **2024-07-08**)
 
 ## Example / Test
 * [`first-tiny-test`.json](json/first-tiny-test.json)

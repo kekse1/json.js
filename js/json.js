@@ -1,14 +1,17 @@
 /*
  * Copyright (c) Sebastian Kucharczyk <kuchen@kekse.biz>
  * https://kekse.biz/ https://github.com/kekse1/json.js/
- * v0.2.0
+ * v0.2.1
  */
 
 //
 const DEFAULT_FILTER = true;
 
 //
-const _JSON = global.JSON; class JSON
+const _GLOBAL = (typeof window === 'undefined' ? global : window);
+const _JSON = _GLOBAL.JSON;
+
+class JSON
 {
 	static get JSON()
 	{
@@ -107,7 +110,7 @@ const _JSON = global.JSON; class JSON
 }
 
 export default JSON;
-global.JSON = JSON;
+_GLOBAL.JSON = JSON;
 
 //
 if(typeof String.prototype._at !== 'function')
