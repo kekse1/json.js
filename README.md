@@ -20,9 +20,12 @@ The `.json` files can now also:
 ## Download
 //**TODO**//(publish it here)
 
+## Details
+I'm just parsing it 'byte by byte'. With one `open` state. That's all.
+
 ## //**TODO**//
 ... maybe more here? The project just started - first I want to test it better,
-then, when uploading it, I'm also going to finish this page, too.
+then, when uploading it, I'm also going to finish this markdown document, too.
 
 # Copyright and License
 The Copyright is [(c) Sebastian Kucharczyk](./COPYRIGHT.txt),
