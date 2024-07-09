@@ -1,116 +1,122 @@
 /*
  * Copyright (c) Sebastian Kucharczyk <kuchen@kekse.biz>
  * https://kekse.biz/ https://github.com/kekse1/json.js/
- * v0.2.1
+ * v0.2.2
  */
 
 //
-const DEFAULT_FILTER = true;
+const DEFAULT_FILTER = true; // globally enable/disable PRE-PROCESSOR/FILTER! w/o it'll be the default behavior.
 
 //
 const _GLOBAL = (typeof window === 'undefined' ? global : window);
-const _JSON = _GLOBAL.JSON;
 
-class JSON
+if(typeof _GLOBAL._JSON === 'undefined')
 {
-	static get JSON()
-	{
-		return _JSON;
-	}
+	const _JSON = _GLOBAL._JSON = _GLOBAL.JSON;
 
-	static parse(_string, ... _args)
+	//
+	class JSON
 	{
-		if(DEFAULT_FILTER)
+		static get JSON()
 		{
-			_string = JSON.filter(_string, 'parse');
+			return _JSON;
+		}
+
+		static parse(_string, ... _args)
+		{
+			if(DEFAULT_FILTER)
+			{
+				_string = JSON.filter(_string, 'parse');
+			}
+			
+			return _JSON.parse(_string, ... _args);
 		}
 		
-		return _JSON.parse(_string, ... _args);
-	}
-	
-	static stringify(_item, ... _args)
-	{
-		return _JSON.stringify(_item, ... _args);
-	}
-	
-	static render(_item, ... _args)
-	{
-		return this.stringify(_item, ... _args);
-	}
-	
-	static filter(_data, _type)
-	{
-		var open = '';
-		var result = '';
-	
-		for(var i = 0; i < _data.length; ++i)
+		static stringify(_item, ... _args)
 		{
-			if(_data[i] === '\\')
-			{
-				if(open !== '*/' && i < (_data.length - 1))
-				{
-					result += '\\';
-
-					if(_data[++i] === open)
-					{
-						result += '"';
-					}
-					else
-					{
-						result += _data[i];
-					}
-				}
-			}
-			else if(open)
-			{
-				if(_data.at(i, open))
-				{
-					if(open === '*/')
-					{
-						++i;
-					}
-					else
-					{
-						result += '"';
-					}
-
-					open = '';
-				}
-				else if(open !== '*/')
-				{
-					if(_data[i] === '"')
-					{
-						result += '\\"';
-					}
-					else
-					{
-						result += _data[i];
-					}
-				}
-			}
-			else if(_data.at(i, '/*'))
-			{
-				open = '*/';
-				++i;
-			}
-			else if(_data[i] === '"' || _data[i] === '\'' || _data[i] === '`')
-			{
-				open = _data[i];
-				result += '"';
-			}
-			else
-			{
-				result += _data[i];
-			}
-
+			return _JSON.stringify(_item, ... _args);
 		}
+		
+		static render(_item, ... _args)
+		{
+			return this.stringify(_item, ... _args);
+		}
+		
+		static filter(_data, _type)
+		{
+			var open = '';
+			var result = '';
+		
+			for(var i = 0; i < _data.length; ++i)
+			{
+				if(_data[i] === '\\')
+				{
+					if(open !== '*/' && i < (_data.length - 1))
+					{
+						result += '\\';
 
-		return result;
+						if(_data[++i] === open)
+						{
+							result += '"';
+						}
+						else
+						{
+							result += _data[i];
+						}
+					}
+				}
+				else if(open)
+				{
+					if(_data.at(i, open))
+					{
+						if(open === '*/')
+						{
+							++i;
+						}
+						else
+						{
+							result += '"';
+						}
+
+						open = '';
+					}
+					else if(open !== '*/')
+					{
+						if(_data[i] === '"')
+						{
+							result += '\\"';
+						}
+						else
+						{
+							result += _data[i];
+						}
+					}
+				}
+				else if(_data.at(i, '/*'))
+				{
+					open = '*/';
+					++i;
+				}
+				else if(_data[i] === '"' || _data[i] === '\'' || _data[i] === '`')
+				{
+					open = _data[i];
+					result += '"';
+				}
+				else
+				{
+					result += _data[i];
+				}
+
+			}
+
+			return result;
+		}
 	}
-}
 
-export default JSON;
-_GLOBAL.JSON = JSON;
+	//
+	export default JSON;
+	_GLOBAL.JSON = JSON;
+}
 
 //
 if(typeof String.prototype._at !== 'function')
