@@ -2,6 +2,7 @@
 
 # **`JSON`.js**
 Just started this one as a really small JSON extension, implemented in **JavaScript**.
+Kinda 'Pre-Processor'.
 
 ## Features
 The `.json` files can now also:
