@@ -2,7 +2,8 @@
 
 # **`JSON`.js**
 Just started this one as a really small JSON extension, implemented in **JavaScript**.
-Kinda 'Pre-Processor'.
+
+It's a **Pre-Processor**, not a Parser.
 
 ## Features
 The `.json` files can now also:
