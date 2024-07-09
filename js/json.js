@@ -114,9 +114,12 @@ if(typeof _GLOBAL._JSON === 'undefined')
 	}
 
 	//
-	export default JSON;
 	_GLOBAL.JSON = JSON;
 }
+
+//
+const JSON = _GLOBAL.JSON;
+export default JSON;
 
 //
 if(typeof String.prototype._at !== 'function')
