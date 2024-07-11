@@ -53,7 +53,7 @@ if(typeof _GLOBAL._JSON === 'undefined')
 				{
 					++i;
 
-					if(open !== '*/' && i < (_data.length - 1))
+					if(open !== '*/' && i < _data.length)
 					{
 						if(!(open && open !== '"' && open === _data[i]))
 						{
