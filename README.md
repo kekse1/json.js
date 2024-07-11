@@ -26,7 +26,7 @@ The `.json` files can now also:
 I'm just parsing it 'byte by byte'. With one `open` state. That's all.
 
 ## More
-//**TODO?**?//
+I'd be happy if you'd send me your own ideas how to extend the JSON format.
 
 # Copyright and License
 The Copyright is [(c) Sebastian Kucharczyk](./COPYRIGHT.txt),
