@@ -17,7 +17,7 @@ The `.json` files can now also:
 * //**TODO??**?// maybe more features will come l8rs.. dunno.
 
 ## Download
-* [Version **v0.2.2**](js/json.js) (updated **2024-07-09**)
+* [Version **v0.2.3**](js/json.js) (updated **2024-07-11**)
 
 ## Example / Test
 * [`first-tiny-test`.json](json/first-tiny-test.json)
@@ -27,12 +27,6 @@ I'm just parsing it 'byte by byte'. With one `open` state. That's all.
 
 ## More
 I'd be happy if you'd send me your own ideas how to extend the JSON format.
-
-## Bugs / TODO
-One tiny mistake atm.: I encoded a string within the _backtick_ **\`**, and when I
-_escaped_ another one (within the text itself), the resulting text was a
-_double quote_ **"** (instead of a real _backtick_ **\`**).
-**TODO**; will be fixed very soon, I promise..! ^\_^
 
 # Copyright and License
 The Copyright is [(c) Sebastian Kucharczyk](./COPYRIGHT.txt),
