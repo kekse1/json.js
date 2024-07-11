@@ -55,8 +55,7 @@ if(typeof _GLOBAL._JSON === 'undefined')
 					{
 						++i;
 
-						if(!(open && open !== '"' && open =
-== _data[i]))
+						if(!(open && open !== '"' && open === _data[i]))
 						{
 							result += '\\';
 						}
