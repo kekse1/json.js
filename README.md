@@ -29,8 +29,9 @@ I'm just parsing it 'byte by byte'. With one `open` state. That's all.
 I'd be happy if you'd send me your own ideas how to extend the JSON format.
 
 ## Bugs / TODO
-One tiny mistake atm.: I encoded a string within the 'backtick' **\`**, and when I
-_escaped_ another one (within the text itself), the resulting text was a double quote **"**.
+One tiny mistake atm.: I encoded a string within the _backtick_ **\`**, and when I
+_escaped_ another one (within the text itself), the resulting text was a double quote **"**
+(instead of a real _backtick_). **TODO**; will be fixed very soon..!
 
 # Copyright and License
 The Copyright is [(c) Sebastian Kucharczyk](./COPYRIGHT.txt),
