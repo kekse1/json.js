@@ -30,8 +30,9 @@ I'd be happy if you'd send me your own ideas how to extend the JSON format.
 
 ## Bugs / TODO
 One tiny mistake atm.: I encoded a string within the _backtick_ **\`**, and when I
-_escaped_ another one (within the text itself), the resulting text was a double quote **"**
-(instead of a real _backtick_). **TODO**; will be fixed very soon..!
+_escaped_ another one (within the text itself), the resulting text was a
+_double quote_ **"** (instead of a real _backtick_ **\`**).
+**TODO**; will be fixed very soon, I promise..! ^\_^
 
 # Copyright and License
 The Copyright is [(c) Sebastian Kucharczyk](./COPYRIGHT.txt),
