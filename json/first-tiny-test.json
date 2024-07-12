@@ -1,4 +1,5 @@
-{/* ein test*/
+{/* ein test\*/*/
 	"abc'\"`d": "/*d*/\"ef",
-	`de\`"f`: '"\'TEST'
+	`de\`"f`: '"\'TEST',
+	`bug`: `fix\``
 	}
