@@ -3,7 +3,14 @@
 # **`JSON`.js**
 Just started this one as a really small JSON extension, implemented in **JavaScript**.
 
-It's a **Pre-Processor**, not a Parser.
+It's a **Pre-Processor**, not a Parser!
+
+## Index
+* [Features](#features)
+* [Download](#download)
+* [Example/Test](#example-test)
+* [Details](#details)
+* [Copyright and License)(#copyright-and-license)
 
 ## Features
 The `.json` files can now also:
@@ -14,19 +21,17 @@ The `.json` files can now also:
 * This also holds for escaping 'em, it's also supported.
 * All both in keys and in values.
 
-* //**TODO??**?// maybe more features will come l8rs.. dunno.
+I'd be happy about your ideas, which other features could be implemented!
 
 ## Download
 * [Version **v0.2.4**](js/json.js) (updated **2024-07-12**)
 
 ## Example / Test
-* [`first-tiny-test`.json](json/first-tiny-test.json)
+* [`test.js`](test/test.js)
+* [`test.json`](test/test.json)
 
 ## Details
 I'm just parsing it 'byte by byte'. With one `open` state. That's all.
-
-## More
-I'd be happy if you'd send me your own ideas how to extend the JSON format.
 
 # Copyright and License
 The Copyright is [(c) Sebastian Kucharczyk](./COPYRIGHT.txt),
