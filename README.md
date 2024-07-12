@@ -8,9 +8,9 @@ It's a **Pre-Processor**, not a Parser!
 ## Index
 * [Features](#features)
 * [Download](#download)
-* [Example/Test](#example-test)
+* [Example/Test](#example--test)
 * [Details](#details)
-* [Copyright and License)(#copyright-and-license)
+* [Copyright and License](#copyright-and-license)
 
 ## Features
 The `.json` files can now also:
