@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 
+var file = 'test.json';
+
 import fs from 'node:fs';
+import path from 'node:path';
 import JSON from '../js/json.js';
 
-const json = fs.readFileSync('./test.json', { encoding: 'utf8' });
+file = path.join(import.meta.dirname, file);
+const json = fs.readFileSync(file, { encoding: 'utf8' });
 const filtered = JSON.filter(json);
 const parsed = JSON.parse(filtered);
 
