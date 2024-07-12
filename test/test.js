@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import fs from 'node:fs';
 import JSON from '../js/json.js';
 
