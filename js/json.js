@@ -1,7 +1,7 @@
 /*
  * Copyright (c) Sebastian Kucharczyk <kuchen@kekse.biz>
  * https://kekse.biz/ https://github.com/kekse1/json.js/
- * v0.2.3
+ * v0.2.4
  */
 
 //
@@ -51,10 +51,10 @@ if(typeof _GLOBAL._JSON === 'undefined')
 			{
 				if(_data[i] === '\\')
 				{
-					if(open !== '*/' && i < (_data.length - 1))
-					{
-						++i;
+					++i;
 
+					if(open !== '*/' && i < _data.length)
+					{
 						if(!(open && open !== '"' && open === _data[i]))
 						{
 							result += '\\';
