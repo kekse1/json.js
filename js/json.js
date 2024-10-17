@@ -1,7 +1,7 @@
 /*
  * Copyright (c) Sebastian Kucharczyk <kuchen@kekse.biz>
  * https://kekse.biz/ https://github.com/kekse1/json.js/
- * v0.2.4
+ * v0.3.0
  */
 
 //
@@ -70,6 +70,7 @@ if(typeof _GLOBAL._JSON === 'undefined')
 						if(open === '*/')
 						{
 							++i;
+							result += '  ';
 						}
 						else
 						{
@@ -89,11 +90,20 @@ if(typeof _GLOBAL._JSON === 'undefined')
 							result += _data[i];
 						}
 					}
+					else if(_data[i] === '\t' || _data[i] === '\n' || _data[i] === '\r')
+					{
+						result += _data[i];
+					}
+					else
+					{
+						result += ' ';
+					}
 				}
 				else if(_data.at(i, '/*'))
 				{
-					open = '*/';
 					++i;
+					open = '*/';
+					result += '  ';
 				}
 				else if(_data[i] === '"' || _data[i] === '\'' || _data[i] === '`')
 				{

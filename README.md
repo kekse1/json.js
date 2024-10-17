@@ -16,15 +16,15 @@ It's a **Pre-Processor**, not a Parser!
 The `.json` files can now also:
 
 * Contain **comments** `/* ... */`
-
 * Beneath the **"** string literal now also supported **'** and **\`**
 * This also holds for escaping 'em, it's also supported.
 * All both in keys and in values.
+* Preserves original lines and columns (over comments, for debugging)
 
 I'd be happy about your ideas, which other features could be implemented!
 
 ## Download
-* [Version **v0.2.4**](js/json.js) (updated **2024-07-12**)
+* [Version **v0.3.0**](js/json.js) (updated **2024-10-17**)
 
 ## Example / Test
 * [`test.js`](test/test.js)
