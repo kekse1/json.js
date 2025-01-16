@@ -6,11 +6,12 @@ Just started this one as a really small JSON extension, implemented in **JavaScr
 It's a **Pre-Processor**, not a Parser!
 
 ## Index
-* [Features](#features)
-* [Download](#download)
-* [Example/Test](#example--test)
-* [Details](#details)
-* [Copyright and License](#copyright-and-license)
+1. [Features](#features)
+2. [Download](#download)
+3. [Example/Test](#example--test)
+4. [Details](#details)
+5. [Contact](#contact)
+6. [Copyright and License](#copyright-and-license)
 
 ## Features
 The `.json` files can now also:
@@ -32,6 +33,9 @@ I'd be happy about your ideas, which other features could be implemented!
 
 ## Details
 I'm just parsing it 'byte by byte'. With one `open` state. That's all.
+
+# Contact
+<img src="https://kekse.biz/github.php?override=github:json.js&draw&text=json.js@kekse.biz&angle=6&size=38pt&fg=150,20,90&font=OpenSans&ro&readonly&h=64&v=16" />
 
 # Copyright and License
 The Copyright is [(c) Sebastian Kucharczyk](./COPYRIGHT.txt),
