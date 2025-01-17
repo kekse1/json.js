@@ -25,7 +25,7 @@ The `.json` files can now also:
 I'd be happy about your ideas, which other features could be implemented!
 
 ## Download
-* [Version **v0.3.0**](js/json.js) (updated **2024-10-17**)
+* [Version v**0.3.0**](js/json.js) (updated **2024-10-17**)
 
 ## Example / Test
 * [`test.js`](test/test.js)
